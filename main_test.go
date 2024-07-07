@@ -6,7 +6,6 @@ import (
 	"testing"
 )
 
-// Test the root handler
 func TestHandler(t *testing.T) {
 	req, err := http.NewRequest("GET", "/", nil)
 	if err != nil {
@@ -28,7 +27,6 @@ func TestHandler(t *testing.T) {
 	}
 }
 
-// Test the API handler
 func TestAPIHandler(t *testing.T) {
 	req, err := http.NewRequest("GET", "/api", nil)
 	if err != nil {
@@ -50,7 +48,6 @@ func TestAPIHandler(t *testing.T) {
 	}
 }
 
-// Test the logging middleware
 func TestLoggingMiddleware(t *testing.T) {
 	req, err := http.NewRequest("GET", "/", nil)
 	if err != nil {
